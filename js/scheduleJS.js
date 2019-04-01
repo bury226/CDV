@@ -118,7 +118,7 @@ window.onload = function()
             {
                 var summary = document.querySelector("#summary");
                 var date = new Date();
-                summary.innerHTML = "W wybranym mieście i kinie w dniu: " + date.toLocaleDateString() +  " nie są dostępne już żadne seanse..."
+                summary.innerHTML = "W wybranym mieście i kinie w dniu: " + date.toLocaleDateString() +  " nie są dostępne żadne seanse..."
                 window.scrollBy(0, 500);
             }
             else
@@ -145,13 +145,13 @@ window.onload = function()
                             ticketCounter ++;
                             toPay += ticketPrice;
                         }
-                    else
-                    {
-                        ticketCounter--;
-                        toPay -= ticketPrice;
-                    }
-                    summary.innerHTML = "Podsumowanie: <br> Zarezerwowane bilety: " + ticketCounter + " Do zapłaty: " + toPay + " zł";
-                    window.scrollBy(0, 100);
+                        else
+                        {
+                            ticketCounter--;
+                            toPay -= ticketPrice;
+                        }
+                        summary.innerHTML = "Podsumowanie: <br> Zarezerwowane bilety: " + ticketCounter + " Do zapłaty: " + toPay + " zł";
+                        window.scrollBy(0, 100);
                     })  
                 });
             }
@@ -190,7 +190,7 @@ window.onload = function()
     {   
         item.addEventListener('mouseover', function(e)
         {
-            item.setAttribute("class", "increaseFont");
+            item.setAttribute("class", "changeFont");
         });
 
         item.addEventListener('mouseout', function(e)

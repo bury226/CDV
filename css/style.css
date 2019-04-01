@@ -51,6 +51,7 @@ input[type=text], select
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    cursor: pointer;
  }
 
  input[type=password], select 
@@ -63,6 +64,7 @@ input[type=text], select
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    cursor: pointer;
 }
 
 input[type=submit] 
@@ -149,6 +151,14 @@ input[type=checkbox]
     transform: scale(2.5);
     margin: 20px;
     padding: 10px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked
+{
+	transform: scale(2.0);
+	opacity: 0.25;
+    transition: all .5s ease;
 }
 
 #summary
@@ -163,15 +173,10 @@ p
     font-size: 22px;
 }
 
-.increaseFont
+.changeFont
 {
     font-size: 50px;
+    font-weight: bold;
     color:  #c23a3a;
 }
 
-input[type=checkbox]:checked
-{
-	transform: scale(2.0);
-	opacity: 0.25;
-    transition: all .5s ease;
-}
